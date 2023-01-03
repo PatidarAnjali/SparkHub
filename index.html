@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SparkHub Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Link the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Link the webpage's JavaScript file -->
+    <script src="/script.js" defer></script>
+
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Link to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@600&family=PT+Serif&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <nav>
+            <div class='logo'><a href="info.html" href="resources.html" href="index.html"><img src="assets/covidh&w.png"
+                        width='210' height='80'></a></div>
+            <ul>
+                <li><a class="geti" a href="resources.html">Resources</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="headingContainer">
+            <div id="headingText">
+                <h1>COVID-19<span class="navAction"><br>Health and Wellness Information + Resources</span></h1>
+            </div>
+            <div class="itemContainer">
+                <div class="headingItems"><img src="assets/headingunsplash1.jpg" alt="" /></div>
+                <div class="headingItems"><img src="assets/headingunsplash2.jpg" alt="" /></div>
+                <div class="headingItems" alt=""><img src="assets/headingunsplash3.jpg" /></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 id="featured">FEATURED STORIES</h1>
+
+        <!-- Slideshow container -->
+        <br>
+        <div class="slideshow-container" id="product">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/case1.png" style="width:100%">
+                <div class="text">
+                    <div class="text-block">Third-grader Morgan developed multisystem inflammatory syndrome in children,
+                        or MIS-C, a rare and dangerous complication of COVID-19 that affects kids and teens. A team
+                        approach at Johns Hopkins Children’s Center saved Morgan from the life-threatening illness, with
+                        coordinated care that included her emotional well-being. Morgan continues to recover and is back
+                        at school, playing dolls with her big sister and looking forward to kicking it on the soccer
+                        field. - Hopkins Medicine</div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/case2.png" style="width:100%">
+                <div class="text">
+                    <div class="text-block">Ahmad Ayyad, 40, was in great shape. On a typical day, he’d work in his
+                        family’s retail furniture business, then box and lift weights, before heading to his Washington,
+                        D.C., home. And then, COVID-19 almost killed him. Ayyad was on a ventilator at The Johns Hopkins
+                        Hospital for 25 days and lost more than 60 pounds during his ordeal. His doctors say his
+                        physical fitness, positive attitude and the support of friends and family are helping him
+                        recover from the disease and the toll of long-term ventilation. Discharged on April 22, Ayyad
+                        still has a blood clot in his left arm and damage to his heart and lungs — all complications of
+                        COVID-19. But he is gradually putting on weight and has begun running and lifting weights. -
+                        Hopkins Medicine</div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/case3.png" style="width:100%">
+                <div class="text">
+                    <div class="text-block">Theirrien “Tee” Clark, a senior law firm manager in Washington, D.C.,
+                        developed a severe case of COVID-19, which affected his lungs and required him to be placed on a
+                        ventilator. He spent a total of 46 days in the hospital, including more than four weeks in the
+                        intensive care unit, after which he was too weak to stand on his own. A multidisciplinary team’s
+                        therapy plan and Theirrien’s own hard work and commitment helped him return home and continue
+                        his recovery with his wife, Marcy. - Hopkins Medicine</div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <br>
+        <br>
+
+        <!-- Make a difference -->
+        <h1 id="together"><span class="together">TOGETHER ;</span> We can made a difference</h1>
+
+        <div class="difference">
+            <div class="homebox">
+                <img src="assets/volunteer.png">
+                <button id='homebox1' onclick="homebox1func()">Become a Volunteer</button>
+            </div>
+            <div class="homebox">
+                <img src="assets/donate.png">
+                <button id='homebox2' onclick="homebox2func()">Donate</button>
+            </div>
+            <div class="homebox">
+                <img src="assets/learn.png">
+                <button id='homebox3' onclick="homebox3func()">Learn about the cause</button>
+            </div>
+        </div>
+
+        <!-- Fact Generator -->
+        <div class="break"></div>
+        <div id="factsHeading">
+            <h2 id="factheading">Fact Generator</h2>
+        </div>
+        <div class="factBtnContainer"><br>
+            <div>
+                <p class="genfacttop">Click the button below to generate facts about COVID-19 vaccines</p>
+                <button id="factBtn">Generate Fact</button>
+            </div>
+            <div id="factContainer">
+                <p id="fact"></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <button onclick="topFunction()" id="topBtn" title="Return to top">⏏</button>
+        </footer>
+
+    </main>
+</body>
+
+</html>

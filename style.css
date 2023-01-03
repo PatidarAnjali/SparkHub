@@ -1,0 +1,670 @@
+* {
+    /* Reset the space of the webpage */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #caf0f8;
+    top: 0;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    background-color: #81b4cf;
+}
+
+.geti {
+    padding: 30px;
+    background-color: #0077b6;
+}
+
+.logo img {
+    position: fixed;
+    margin-top: 3.5px;
+    margin-left: 10px;
+}
+
+/* heading */
+.headingContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    height: 500px;
+    border-bottom: black solid 1px;
+    justify-content: center;
+    background-color: black;
+}
+
+#headingText {
+    max-width: 40%;
+    display: flex;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 2em;
+    padding: 1em 1em;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5em;
+    color: white;
+    text-shadow: 2px 2px #7a7380;
+}
+
+.navAction {
+    color: #22A5EB;
+}
+
+.itemContainer {
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headingItems {
+    max-width: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headingItems img {
+    max-width: 200%;
+    display: inline-block;
+}
+
+/* Slideshow container */
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    justify-content: center;
+    max-width: 85%;
+    position: relative;
+    margin: auto;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.text-block {
+    position: absolute;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.5em;
+    bottom: 20px;
+    left: 10px;
+    right: 50%;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 15px;
+}
+
+/* Featured stories */
+#featured {
+    font-size: 70px;
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    border: 20px solid white;
+    text-shadow: 1px 1px 2px #0077b6;
+}
+
+#together {
+    font-size: 50px;
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: black;
+    border-top: 40px solid black;
+}
+
+.together {
+    color: #0077b6;
+}
+
+.difference {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+.homebox {
+    padding: 5px;
+}
+
+.homebox img {
+    border: 20px solid #fafafa;
+    max-width: 100%;
+    align-content: center;
+}
+
+#homebox1,
+#homebox2,
+#homebox3 {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    width: 100%;
+    color: #0077b6;
+    background-color: #fafafa;
+    padding: 15px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    cursor: pointer;
+}
+
+#homebox1:hover,
+#homebox2:hover,
+#homebox3:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+#homebox1:active,
+#homebox2:active,
+#homebox3:active {
+    position: relative;
+    top: 1px;
+}
+
+.break {
+    background-color: black;
+    width: 100%;
+    padding: 30px;
+}
+
+/* Fact Generator */
+#factsHeading {
+    background-image: url("assets/factgen.jpg");
+    padding: 150px;
+    align-items: center;
+    width: 100%;
+    opacity: 0.9;
+    border-bottom: 30px solid black;
+}
+
+#factheading {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 90px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.factBtnContainer {
+    max-width: 100%;
+    height: 680px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.factBtnContainer div {
+    max-width: 40%;
+    height: 50%;
+    display: flex;
+    padding: 5em 5em;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    border-radius: 30px;
+}
+
+#factBtn {
+    height: auto;
+    background-color: gray;
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.genfacttop {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #0077b6;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 35px;
+}
+
+#factContainer {
+    width: 25%;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    background-color: black;
+    color: white;
+    margin-right: 12%;
+}
+
+#factBtn:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: #0077b6;
+    box-shadow: 2px 2px 1px black;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #caf0f8;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    padding: 2em 0em;
+}
+
+#topBtn {
+    font-size: 100px;
+    color: black;
+    background-color: #caf0f8;
+    border: none;
+}
+
+#topBtn:hover {
+    color: #0077b6;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* About page */
+.aboutheadingContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    height: 500px;
+    justify-content: center;
+    background-color: black;
+}
+
+#aboutheadingText {
+    text-align: center;
+    display: flex;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding: 1em 1em;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px #7a7380;
+}
+
+.aboutnavAction {
+    color: #22A5EB;
+    text-shadow: 2px 3px 5px #545454;
+}
+
+#aboutimage {
+    border: 20px solid #fafafa;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.aboutSection {
+    background-color: white;
+    display: flex;
+    margin: 1em 0em 6em 0em;
+}
+
+.aboutSection h2 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 5em;
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    padding: 0em 0em 3em;
+    margin-bottom: 1em;
+    max-width: 95%;
+}
+
+.impactDiv {
+    border-bottom: 1px black solid;
+}
+
+.aboutItem img {
+    border: 10px solid #0077b6;
+    max-width: 40%;
+}
+
+.aboutItem p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 24px;
+    max-width: 100%;
+    padding: 1em;
+}
+
+.wellnessinfo {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 28px;
+    max-width: 100%;
+    color: #22A5EB;
+    padding-right: 1em;
+}
+
+.aboutSectionHeading {
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-top: 1.5em;
+}
+
+.aboutSectionHeading h3 {
+    font-size: 35px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding-bottom: 0.5em;
+}
+
+.youHeading {
+    background-image: url('assets/you.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.youHeading h2 {
+    font-size: 5em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.you {
+    background-color: #0077b6;
+    padding: 5px 5px;
+}
+
+.aboutItem ul {
+    max-width: 100%;
+    background-color: black;
+    margin: 0px;
+    display: inline-block;
+}
+
+.aboutItem li {
+    font-size: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: left;
+    padding: 1em 1em;
+}
+
+.youItem {
+    border-left: 1px black solid;
+}
+
+.reasonHeading {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.reasonTextSection {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Take Action */
+.getiheadingContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    height: 350px;
+    justify-content: center;
+    background: #075178;
+}
+
+#getiText {
+    text-align: center;
+    display: flex;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding: 1em 1em;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px #7a7380;
+}
+
+.getiImg {
+    max-width: 100%;
+    scroll-behavior: auto;
+}
+
+.actionSection,
+.resourceSection {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.actionSection h1,
+.resourceSection h1 {
+    font-size: 5.5em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.actionSection p {
+    max-width: 80%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.actionSection div {
+    max-width: 70%;
+    border-bottom: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.actionSection a {
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+
+.actionSection button {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    max-width: 35%;
+    background-color: #22A5EB;
+    text-decoration: none;
+    border: none;
+    padding: 1em 1.5em;
+    margin-bottom: 4em;
+}
+
+.actionSection button:hover {
+    background-color: #cfcfcf;
+    transition: 0.3s;
+    color: white;
+    box-shadow: 3px 3px 2px black;
+    cursor: pointer;
+}
+
+.actionMain {
+    padding-bottom: 4em;
+}
+
+.resourceSection {
+    flex-direction: column;
+}
+
+.resourceSection div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resourceSection p {
+    max-width: 90%;
+    font-size: 1em;
+}
+
+.resourceSection a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 2em;
+    color: #22A5EB;
+    text-decoration: underline;
+    margin: 0.5em;
+}
+
+.resourceSection a:hover {
+    color: #cfcfcf;
+    transition: 0.3s;
+}
+
+.resourceTag {
+    background-color: black;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    padding: 0em 0.75em;
+    margin: 1em;
+}
+
+.resourceSection p {
+    padding: 1em 0em 2em;
+}
+
+.resourceItem {
+    border-bottom: 1px black solid;
+}
